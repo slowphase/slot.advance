@@ -147,14 +147,6 @@ section > p { margin: 0 auto; color: var(--muted); max-width: 36rem; }
 .grid section { min-width: 0; align-content: start; }
 .grid h2 { font-size: 1.15rem; }
 
-/* Battery chart: the repository's SVG, kept modest so it doesn't outweigh the other features. */
-.battery { gap: 1.25rem; }
-.battery strong { color: var(--fg); font-weight: 500; }
-.battery-chart { display: block; width: 100%; max-width: 34rem; height: auto; margin: 0 auto; border-radius: 14px; }
-.note { margin: 0; color: var(--muted); font-size: 0.85rem; line-height: 1.5; text-align: center; }
-.note a { text-decoration-color: var(--dim); text-underline-offset: 3px; }
-.note a:hover { color: var(--fg); text-decoration-color: var(--fg); }
-
 /* Close */
 .close {
   display: grid; gap: 1.25rem; justify-items: center; text-align: center;
@@ -206,13 +198,6 @@ section > p { margin: 0 auto; color: var(--muted); max-width: 36rem; }
     <p class="get-meta"><a href="https://github.com/slowphase/slot.advance#installing-and-updating">Installation guide</a><span class="sep" aria-hidden="true">·</span>RG&nbsp;SP&nbsp;(2026) only. Not compatible with the RG35XX&nbsp;SP.</p>
   </div>
 
-  <section class="battery">
-    <h2><i class="mark" style="--c:var(--s1)" aria-hidden="true"></i>Real sleep, lower standby drain</h2>
-    <p>Close the lid and your game waits in memory. Open it and carry on straight away, with nothing reloaded. Hardware sleep uses <strong>about 2% of the battery an hour</strong>, against roughly 7% for semi-stock software standby.</p>
-    <img class="battery-chart" src="battery-standby-1.0.0.svg" width="720" height="489" loading="lazy" alt="Battery used per hour with the lid closed, from battery-gauge readings: about 7% for semi-stock software standby (a modified 0.3.0 build held in standby, 61% to 47% in 2 hours) and about 2% for slot.advance 1.0.0 hardware sleep. 1.0.0 uses 0.5.0's hardware sleep unchanged; its figure comes from two 8-hour sleeps on a 0.5.0 test build, with Wi-Fi off (77% to 61%) and with Wi-Fi on (80% to 64%)">
-    <p class="note">Observed battery-gauge readings, not guaranteed battery life. <a href="https://github.com/slowphase/slot.advance/blob/main/documentation/sleep-and-battery.md">How it was measured</a></p>
-  </section>
-
   <div class="grid">
     <section>
       <h2><i class="mark" style="--c:var(--s4)" aria-hidden="true"></i>Wi-Fi when you want it</h2>
@@ -227,8 +212,8 @@ section > p { margin: 0 auto; color: var(--muted); max-width: 36rem; }
       <p>Off by default. Softcore achievements on mGBA. Start a game online once, and from then on it earns achievements offline too, sent when Wi-Fi next connects.</p>
     </section>
     <section>
-      <h2><i class="mark" style="--c:var(--s3)" aria-hidden="true"></i>Sleep on your schedule</h2>
-      <p>Choose from 3 minutes to 8 hours. After that it shuts down cleanly and restores your game at the next power-on.</p>
+      <h2><i class="mark" style="--c:var(--s3)" aria-hidden="true"></i>Real sleep. Instant resume.</h2>
+      <p>Close the lid and pick up exactly where you left off. Choose how long it sleeps before safely shutting down and restoring your game on the next power-on.</p>
     </section>
     <section>
       <h2><i class="mark" style="--c:var(--s2)" aria-hidden="true"></i>Settings without leaving your game</h2>

@@ -230,7 +230,7 @@ What these show, and what they don't:
 
 *Measured in Phase 6 of the 1.0.0 work (developed as 0.6.0), 8 November 2026, on the test build of `release-0.6.0` at `08261fd`: the code released as 1.0.0 apart from the version number. Recalculated by [`calculate-1.0.0.py`](battery-tests/calculate-1.0.0.py).*
 
-**Asleep: not measured on 1.0.0, and nothing to measure.** 1.0.0 adds RetroAchievements and changes nothing in the sleep path: its threads are frozen with every other process during suspend, and nothing it does is part of the decision to sleep. The 1.0.0 figure in the README, about 2% an hour, is therefore the two extended 8-hour sleeps on a 0.5.0 test build ([Asleep](#asleep), V1-B and V1-D), presented as the figure for the same hardware sleep implementation. Phase 6 checked sleep and wake with RetroAchievements only lightly: lid cycles with it Off and On, all of which resumed normally.
+**Asleep: not remeasured on 1.0.0. The hardware sleep implementation is unchanged from 0.5.0.** 1.0.0 adds RetroAchievements and changes nothing in the sleep path: its threads are frozen with every other process during suspend, and nothing it does is part of the decision to sleep. The 1.0.0 figure in the README, about 2% an hour, is therefore the two extended 8-hour sleeps on a 0.5.0 test build ([Asleep](#asleep), V1-B and V1-D), presented as the figure for the same hardware sleep implementation. Phase 6 checked sleep and wake with RetroAchievements only lightly: lid cycles with it Off and On, all of which resumed normally.
 
 **Awake, while playing:**
 
